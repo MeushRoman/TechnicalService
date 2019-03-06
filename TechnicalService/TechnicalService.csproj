@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modules\Account.cs" />
+    <Compile Include="Modules\CarBrokenService.cs" />
     <Compile Include="Modules\CreateCars.cs" />
     <Compile Include="Modules\CreateComponents.cs" />
     <Compile Include="Modules\CreateProject.cs" />
