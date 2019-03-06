@@ -17,10 +17,11 @@ namespace TechnicalService.Modules
 
         public override string ToString()
         {
-            int i = 1;
+            int i = 0;
             string str = "";
             foreach (string item in Projects)
             {
+                i++;
                 str += string.Format("{0}. {1}",i,item);
             }
             return str;
