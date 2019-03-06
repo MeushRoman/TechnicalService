@@ -9,17 +9,23 @@ namespace TechnicalService.Modules
 {
     public class CreateCars
     {
-        public List<Car> Cars = new List<Car>();        
+        public List<Car> Cars = new List<Car>();    
 
-        public string CreateCar(string model, int year, string type, int numb, bool active)
+        public List<Project> Projects = new List<Project>();
+
+        public bool CreateCar(string model, int year, string type, int numb, bool active)
         {
-            if (Cars.Where(w => w.Numb == numb).ToList()[0] == null)
-            {
-                Cars.Add(new Car(model, year, type, numb, active));
-                return "Успешно создан";
-            }
-            else            
-                return "Гаражный номер занят";            
+            if (Cars.Count > 0)
+                if (Cars.Where(w => w.Numb == numb).ToList()[0] != null)
+                    return false;            
+            
+            Cars.Add(new Car(model, year, type, numb, active));
+            return true;
+        }
+        
+        public void AddCarsInProject(string nameProject)
+        {
+
         }
 
         public Car SearchCar(int numb)

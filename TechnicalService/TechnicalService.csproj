@@ -49,6 +49,7 @@
     <Compile Include="Modules\CreateProject.cs" />
     <Compile Include="Objects\Car.cs" />
     <Compile Include="Objects\CarBroken.cs" />
+    <Compile Include="Objects\Project.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

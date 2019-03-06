@@ -9,10 +9,10 @@ namespace TechnicalService.Objects
 {
     public class Car
     {
-        public string Model { get; set; }
-        public int Year { get; set; }
-        public string Type { get; set; }
-        public int Numb { get; set; }
+        public string Model { get; private set; }
+        public int Year { get; private set; }
+        public string Type { get; private set; }
+        public int Numb { get; private set; }
         public bool Active { get; set; }
 
         Dictionary<int, string> Components = new Dictionary<int, string>();

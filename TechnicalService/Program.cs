@@ -12,8 +12,15 @@ namespace TechnicalService
         static void Main(string[] args)
         {
             CreateCars c = new CreateCars();
-            c.CreateCar("model", 2015, "traktor", 4, true);
-            Console.WriteLine(c.SearchCar(4)); 
+            //Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
+            //Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
+
+            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
+            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
+            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
+
+            Console.WriteLine(c.SearchCar(4));
+           
         }
     }
 }
