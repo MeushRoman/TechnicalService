@@ -9,9 +9,9 @@ namespace TechnicalService.Modules
 {
     public class CreateCars
     {
-        public List<Car> Cars { get; set; }
+        public List<Car> Cars = new List<Car>();
 
-        CreateComponents Components = new CreateComponents();
+        public CreateComponents Components = new CreateComponents();
 
 
     }

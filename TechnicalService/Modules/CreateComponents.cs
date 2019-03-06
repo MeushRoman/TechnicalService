@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TechnicalService.Modules
 {
-    class CreateComponents
+    public class CreateComponents
     {
         public Dictionary<int, string> Components = new Dictionary<int, string>();      
 
