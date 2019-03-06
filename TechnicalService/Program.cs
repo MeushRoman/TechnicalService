@@ -4,22 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TechnicalService.Modules;
-
+using TechnicalService.Console;
 namespace TechnicalService
 {
     class Program
     {
         static void Main(string[] args)
         {
-            CreateCars c = new CreateCars();
-            //Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
-            //Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
-
-            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
-            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
-            Console.WriteLine(c.CreateCar("model", 2015, "traktor", 4, true));
-
-            Console.WriteLine(c.SearchCar(4));
+            Menu m = new Menu();
+            m.MainMenu(); 
            
         }
     }

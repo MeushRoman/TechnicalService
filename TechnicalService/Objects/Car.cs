@@ -12,7 +12,7 @@ namespace TechnicalService.Objects
         public string Model { get; private set; }
         public int Year { get; private set; }
         public string Type { get; private set; }
-        public int Numb { get; private set; }
+        public int Numb { get; set; }
         public bool Active { get; set; }
 
         Dictionary<int, string> Components = new Dictionary<int, string>();

@@ -49,13 +49,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\Account.cs" />
+    <Compile Include="Console\Menu.cs" />
     <Compile Include="Modules\CarBrokenService.cs" />
     <Compile Include="Modules\CreateCars.cs" />
     <Compile Include="Modules\CreateComponents.cs" />
     <Compile Include="Modules\CreateProject.cs" />
+    <Compile Include="Modules\ServiceUser.cs" />
     <Compile Include="Objects\Car.cs" />
     <Compile Include="Objects\CarBroken.cs" />
+    <Compile Include="Objects\Project.cs" />
+    <Compile Include="Objects\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -95,14 +95,14 @@ namespace TechnicalService.Modules
             }
         }
 
-        public List<Car> CreateService(bool active)
-        {
-            List<Car> car = new List<Car>();
-            if (car.CompareTo(active))
-            {
+        //public List<Car> CreateService(bool active)
+        //{
+        //    List<Car> car = new List<Car>();
+        //    if (car.CompareTo(active))
+        //    {
 
-            }
-        }
+        //    }
+        //}
         public static void PrintMessage(string str)
         {
             System.Console.ForegroundColor = System.ConsoleColor.Green;
@@ -117,7 +117,7 @@ namespace TechnicalService.Modules
             System.Console.ForegroundColor = System.ConsoleColor.White;
         }
 
-        public static void SendNotification(Users u)
+        public static void SendNotification(CarBroken u)
         {
             System.Console.WriteLine("Уведомление об установке отпарвлено");
         }

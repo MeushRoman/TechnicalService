@@ -18,7 +18,7 @@ namespace TechnicalService.Modules
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                System.Console.WriteLine(ex.Message);
             }
         }
 

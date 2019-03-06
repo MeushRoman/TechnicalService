@@ -10,8 +10,7 @@ using System.Threading.Tasks;
 
 namespace TechnicalService.Objects
 {
-    public delegate void PrintMessage(string str);
-    public delegate void ShowError(Exception ex);
+    
     public class Users
     {
         public int Id { get; set; }
