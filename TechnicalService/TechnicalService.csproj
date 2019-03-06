@@ -56,8 +56,6 @@
     <Compile Include="Modules\CreateProject.cs" />
     <Compile Include="Objects\Car.cs" />
     <Compile Include="Objects\CarBroken.cs" />
-    <Compile Include="Modules\ServiceUser.cs" />
-    <Compile Include="Objects\Users.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
