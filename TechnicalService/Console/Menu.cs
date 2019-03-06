@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using TechnicalService.Objects;
 
 namespace TechnicalService.Console
 {
     public class Menu
     {
-       
+
         public void WelcomeMenu()
         {
             System.Console.WriteLine("Добро пожаловать!");
@@ -24,7 +25,6 @@ namespace TechnicalService.Console
 
             System.Console.WriteLine("1. Управление\n2. Создание\n3. Выход");
             System.Console.WriteLine("\n Ваш выбор: ");
-
             int ch = int.Parse(System.Console.ReadLine());
             while (!(ch >= 4))
             {
@@ -44,17 +44,16 @@ namespace TechnicalService.Console
                     Thread.Sleep(1500);
                     System.Environment.Exit(1);
                 }
-
-
-                if (ch >= 4)
-                {
-                    System.Console.WriteLine("Неверный выбор");
-                    System.Console.Clear();
-                    MainMenu();
-                }
-
-
             }
+            if (ch >= 4)
+            {
+                System.Console.WriteLine("Неверный выбор");
+                System.Console.Clear();
+                MainMenu();
+            }
+
+
+
         }
         public void CreationMenu()
         {
@@ -72,6 +71,22 @@ namespace TechnicalService.Console
                     case 3:
                         break;
                     case 4:
+                        {
+                            System.Console.Clear();
+                            UserMenu u = new UserMenu();
+                            u.Create();
+                            System.Console.WriteLine("Еще одного? д/н");
+                            string ch = System.Console.ReadLine();
+                            System.Console.Clear();
+                            if (ch == "д")
+                            {
+                                u.Create();
+                            }
+                            else if (ch == "н")
+                            {
+                                CreationMenu();
+                            }
+                        }
                         break;
                     case 5:
                         break;
@@ -234,6 +249,10 @@ namespace TechnicalService.Console
                 switch (choice)
                 {
                     case 1:
+                        {
+                            UserMenu um = new UserMenu();
+                            um.PrintByProject();
+                        }
                         break;
                     case 2:
                         System.Console.Clear();
