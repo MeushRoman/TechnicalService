@@ -31,11 +31,7 @@ namespace TechnicalService.Console
             System.Console.WriteLine("Введите название проекта: ");
             string project = System.Console.ReadLine();
             ServiceUser us = new ServiceUser();
-            us.FindByProject(project);
-
-           
-
-            
+            us.FindByProject(project);         
         }
 
 

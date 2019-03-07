@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Console\Menu.cs" />
+    <Compile Include="Console\Union.cs" />
     <Compile Include="Console\UserMenu.cs" />
     <Compile Include="Modules\CarBrokenService.cs" />
     <Compile Include="Modules\CreateCars.cs" />

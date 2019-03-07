@@ -21,12 +21,7 @@ namespace TechnicalService.Modules
             
             Cars.Add(new Car(model, year, type, numb, active));
             return true;
-        }
-        
-        public void AddCarsInProject(string nameProject)
-        {
-
-        }
+        }    
 
         public Car SearchCar(int numb)
         {            
@@ -37,5 +32,17 @@ namespace TechnicalService.Modules
         {
             return Cars.Where(w => w.Model == model).ToList();
         }
+
+        public override string ToString()
+        {
+            string str = "";
+            foreach (Car item in Cars)
+            {
+                str += string.Format("{0}\n-----------------\n", item);
+            }
+            return str;
+        }
+
+
     }
 }

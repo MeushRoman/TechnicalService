@@ -3,26 +3,32 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechnicalService.Objects;
 
 namespace TechnicalService.Modules
 {
     public class CreateProject
     {
-        public List<string> Projects { get; set; }
 
-        public void CreateNewProject(string name)
+        public List<Project> projects = new List<Project>();
+
+        public bool CreateNewProject(string name)
         {
-            Projects.Add(name);
+            if (projects.Where(w => w.Name.Equals(name)).ToList().Count > 0)
+                return false;
+
+            projects.Add(new Project(name));
+            return true;
         }
 
         public override string ToString()
         {
             int i = 0;
             string str = "";
-            foreach (string item in Projects)
+            foreach (Project item in projects)
             {
                 i++;
-                str += string.Format("{0}. {1}",i,item);
+                str += string.Format("{0}. {1}\n", i, item.Name);
             }
             return str;
         }
